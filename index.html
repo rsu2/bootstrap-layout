@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Bootstrap Layout</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="manifest" href="site.webmanifest">
+      <link rel="apple-touch-icon" href="icon.png">
+      <!-- Place favicon.ico in the root directory -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!--if needed custom css stylesheet goes here -->
+      <meta name="theme-color" content="#fafafa">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   </head>
+   <body>
+      <header>
+         <nav class="navbar navbar-expand-lg  text-white navbar-light bg-dark">
+            <a class="navbar-brand" href="#"><img class="w-25 p-3" src="img/logo01.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link  text-white-50" href="#">Tools <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item mr-3">
+                     <a class="nav-link  text-white-50" href="#">Messages <span class="badge badge-light">3</span></a>
+                  </li>
+
+                    <li class="nav-item dropdown btn btn-primary">
+                        <a class="dropdown-toggle  text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Notifications</a>
+                            <a class="dropdown-item border-top" href="#">Sign Out</a>
+                        </div>
+                    </li>
+          
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section class="container  ">
+            <div class="jumbotron jumbotron-fluid bg-light ml-1 mr-1  ">
+               <div class="container">
+                  <h1 class="display-4 font-italic ">Title of the Main <br> Jumbotron Area</h1>
+                  <p class="lead font-weight-normal">A lightweight, flexible component that can optionally extend <br> the entire viewport to showcase key marketing messages on <br> your site.</p>
+                  <a href="#" class="text-decoration-none font-weight-bold ">Continue reading...</a>
+               </div>
+            </div>
+         </section>
+         <section>
+            <div class="container mt-3 mb-5 ">
+               <div class="row ">
+                  <div class="col-md bg-light mt-3 ml-3 mr-3 border">
+                     <h3>Featured</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ducimus ipsam, sint doloremque et tempore eveniet neque quidem in beatae dolor minus aspernatur quo corrupti exercitationem accusantium unde nobis aperiam?
+                     </p>
+                     <button type="button" class="btn btn-secondary mb-5">View details »</button>
+                  </div>
+                  <div class="col-md bg-light ml-3 mt-3 mr-3 border">
+                     <h3>Featured</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ducimus ipsam, sint doloremque et tempore eveniet neque quidem in beatae dolor minus aspernatur quo corrupti exercitationem accusantium unde nobis aperiam?
+                     </p>
+                     <button type="button" class="btn btn-secondary mb-5">View details »</button>
+                  </div>
+                  <div class="col-md bg-light ml-3 mt-3 mr-3 border">
+                     <h3>Featured</h3>
+                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ducimus ipsam, sint doloremque et tempore eveniet neque quidem in beatae dolor minus aspernatur quo corrupti exercitationem accusantium unde nobis aperiam?
+                     </p>
+                     <button type="button" class="btn btn-secondary mb-5">View details »</button>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+   
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
