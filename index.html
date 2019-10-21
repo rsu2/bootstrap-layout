@@ -2,87 +2,81 @@
 <html lang="en">
    <head>
       <meta charset="utf-8">
-      <title>Bootstrap Layout</title>
+      <title>Dashboard</title>
       <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="manifest" href="site.webmanifest">
-      <link rel="apple-touch-icon" href="icon.png">
-      <!-- Place favicon.ico in the root directory -->
+      <link rel="apple-touch-icon" href="icon.png">   
       <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!--if needed custom css stylesheet goes here -->
+      <link rel="stylesheet" href="css/style.css">
       <meta name="theme-color" content="#fafafa">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
    </head>
    <body>
       <header>
-         <nav class="navbar navbar-expand-lg  text-white navbar-light bg-dark">
-            <a class="navbar-brand" href="#"><img class="w-25 p-3" src="img/logo01.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNavDropdown">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                     <a class="nav-link  text-white-50" href="#">Tools <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item mr-3">
-                     <a class="nav-link  text-white-50" href="#">Messages <span class="badge badge-light">3</span></a>
-                  </li>
+            <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-                    <li class="nav-item dropdown btn btn-primary">
-                        <a class="dropdown-toggle  text-white" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Account
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Settings</a>
-                            <a class="dropdown-item" href="#">Notifications</a>
-                            <a class="dropdown-item border-top" href="#">Sign Out</a>
-                        </div>
+                  <a class="navbar-brand mr-1" href="index.html">Bootstrap</a>
+              
+                  <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+                    <i class="fas fa-bars"></i>
+                  </button>
+              
+                  <!-- Navbar Search -->
+                  <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+              
+                  <!-- Navbar -->
+                  <ul class="navbar-nav ml-auto ml-md-0">
+                    <li class="nav-item dropdown no-arrow mx-1">
+                      <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell fa-fw"></i>
+                        <span class="badge badge-danger">9+</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
                     </li>
-          
-               </ul>
-            </div>
-         </nav>
+                    <li class="nav-item dropdown no-arrow mx-1">
+                      <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-envelope fa-fw"></i>
+                        <span class="badge badge-danger">7</span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow">
+                      <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle fa-fw"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+                      </div>
+                    </li>
+                  </ul>            
+                </nav>
       </header>
-      <main>
-         <section class="container  ">
-            <div class="jumbotron jumbotron-fluid bg-light ml-1 mr-1  ">
-               <div class="container">
-                  <h1 class="display-4 font-italic ">Welcome!<br> Jumbotron Area</h1>
-                  <p class="lead font-weight-normal">A lightweight, flexible component that can optionally extend <br> the entire viewport to showcase key marketing messages on <br> your site.</p>
-                  <a href="#" class="text-decoration-none font-weight-bold ">Continue reading...</a>
-               </div>
-            </div>
-         </section>
-         <section>
-            <div class="container mt-3 mb-5 ">
-               <div class="row ">
-                  <div class="col-md bg-light mt-3 ml-3 mr-3 border">
-                     <h3>Featured</h3>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ducimus ipsam, sint doloremque et tempore eveniet neque quidem in beatae dolor minus aspernatur quo corrupti exercitationem accusantium unde nobis aperiam?
-                     </p>
-                     <button type="button" class="btn btn-secondary mb-5">View details »</button>
-                  </div>
-                  <div class="col-md bg-light ml-3 mt-3 mr-3 border">
-                     <h3>Featured</h3>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ducimus ipsam, sint doloremque et tempore eveniet neque quidem in beatae dolor minus aspernatur quo corrupti exercitationem accusantium unde nobis aperiam?
-                     </p>
-                     <button type="button" class="btn btn-secondary mb-5">View details »</button>
-                  </div>
-                  <div class="col-md bg-light ml-3 mt-3 mr-3 border">
-                     <h3>Featured</h3>
-                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ducimus ipsam, sint doloremque et tempore eveniet neque quidem in beatae dolor minus aspernatur quo corrupti exercitationem accusantium unde nobis aperiam?
-                     </p>
-                     <button type="button" class="btn btn-secondary mb-5">View details »</button>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </main>
-   
+
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
